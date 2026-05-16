@@ -11,6 +11,14 @@
     <script>
         var nome = window.prompt('Qual é o seu nome?')
         document.write(`Olá <strong>${nome}</strong>. Seu Nome tem ${nome.length} letras. `)
+        var valor = 1545.50;
+
+var salarioBRL = valor.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+});
+
+document.write("O salário é " + salarioBRL);
 
     </script>
 </body>
